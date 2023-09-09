@@ -22,9 +22,12 @@
     "generate-gh-pages": "BASE_PATH=/vite-react-ts-template/ npm run build && rm -rf docs && cp -r dist docs && npm run build-storybook && npm run build-typedoc && cp gh-pages/404.html docs"
   },
   "dependencies": {
+    "@hookform/resolvers": "3.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-router-dom": "6.12.1"
+    "react-hook-form": "7.46.1",
+    "react-router-dom": "6.12.1",
+    "zod": "3.22.2"
   },
   "devDependencies": {
     "@babel/core": "7.22.5",
@@ -34,7 +37,7 @@
     "@storybook/addon-links": "7.0.20",
     "@storybook/addon-storyshots": "7.0.20",
     "@storybook/react": "7.0.20",
-    "@storybook/react-vite": "^7.0.20",
+    "@storybook/react-vite": "7.0.20",
     "@storybook/testing-library": "0.1.0",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "14.0.0",
@@ -43,6 +46,7 @@
     "@typescript-eslint/eslint-plugin": "5.59.11",
     "@typescript-eslint/parser": "5.59.11",
     "@vitejs/plugin-react": "4.0.0",
+    "autoprefixer": "10.4.15",
     "babel-loader": "9.1.2",
     "eslint": "8.42.0",
     "eslint-config-prettier": "8.8.0",
@@ -56,8 +60,10 @@
     "husky": "8.0.3",
     "jest": "29.5.0",
     "jest-environment-jsdom": "29.5.0",
+    "postcss": "8.4.29",
     "prettier": "2.8.8",
-    "storybook": "^7.0.20",
+    "storybook": "7.0.20",
+    "tailwindcss": "3.3.3",
     "ts-jest": "29.1.0",
     "ts-node": "10.9.1",
     "typedoc": "0.24.8",
